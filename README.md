@@ -5,7 +5,9 @@ it then updates the database with the original snapshot including groups,
 this will get around the bug.
 
 # usage
-node applySnapshot ./snapShot.json
+copy your snapshotfile to the script directory.
+apply snapshot using following command.
+node applySnapshot.js ./snapShot.json
 
 # note
-this script only words on json files
+this script only works on json files
