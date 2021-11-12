@@ -53,7 +53,9 @@ const applySnapshot = () => {
 
     withGroups.on("exit", function (code, signal) {
       console.log("exit " + code);
-      fs.unlink("./snapshotWithoutGroups.json");
+      fs.unlink("./snapshotWithoutGroups.json", (err) => {
+        if(err){console.error(err)}
+      });
     });
   });
 };
