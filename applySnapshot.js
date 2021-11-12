@@ -57,5 +57,5 @@ const applySnapshot = () => {
   });
 };
 
-fs.writeFileSync("./componentsWithoutGroups.json", JSON.stringify(newjson));
+fs.writeFileSync("./snapshotWithoutGroups.json", JSON.stringify(newjson));
 applySnapshot()
