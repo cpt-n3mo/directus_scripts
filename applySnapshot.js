@@ -40,6 +40,7 @@ const applySnapshot = () => {
   });
 
   noGroups.on("exit", function (code, signal) {
+    if(code != 0){return}
     const withGroups = spawn("npx", ["directus", "schema", "apply",'-y', file]);
 
     withGroups.stdout.on("data", (data) => {
