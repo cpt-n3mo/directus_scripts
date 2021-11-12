@@ -4,3 +4,8 @@ This script first removes all groups from the snapshot, and then applies it to t
 it then updates the database with the original snapshot including groups,
 this will get around the bug.
 
+# usage
+node applySnapshot ./snapShot.json
+
+# note
+this script only words on json files
